@@ -1,0 +1,42 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'start' ]
+2 info using npm@3.3.6
+3 info using node@v5.0.0
+4 verbose run-script [ 'prestart', 'start', 'poststart' ]
+5 info lifecycle pickthing@0.0.0~prestart: pickthing@0.0.0
+6 silly lifecycle pickthing@0.0.0~prestart: no script for prestart, continuing
+7 info lifecycle pickthing@0.0.0~start: pickthing@0.0.0
+8 verbose lifecycle pickthing@0.0.0~start: unsafe-perm in lifecycle true
+9 verbose lifecycle pickthing@0.0.0~start: PATH: /usr/lib/node_modules/npm/bin/node-gyp-bin:/home/brad/pickthing/node_modules/.bin:/home/brad/.rvm/gems/ruby-2.1.5/bin:/home/brad/.rvm/gems/ruby-2.1.5@global/bin:/home/brad/.rvm/rubies/ruby-2.1.5/bin:/home/brad/.pythonbrew/bin:/home/brad/.pythonbrew/pythons/Python-2.7.5/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/brad/.rvm/bin:/home/brad/.rvm/bin
+10 verbose lifecycle pickthing@0.0.0~start: CWD: /home/brad/pickthing
+11 silly lifecycle pickthing@0.0.0~start: Args: [ '-c', 'node ./bin/www' ]
+12 silly lifecycle pickthing@0.0.0~start: Returned: code: 1  signal: null
+13 info lifecycle pickthing@0.0.0~start: Failed to exec start script
+14 verbose stack Error: pickthing@0.0.0 start: `node ./bin/www`
+14 verbose stack Exit status 1
+14 verbose stack     at EventEmitter.<anonymous> (/usr/lib/node_modules/npm/lib/utils/lifecycle.js:233:16)
+14 verbose stack     at emitTwo (events.js:87:13)
+14 verbose stack     at EventEmitter.emit (events.js:172:7)
+14 verbose stack     at ChildProcess.<anonymous> (/usr/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+14 verbose stack     at emitTwo (events.js:87:13)
+14 verbose stack     at ChildProcess.emit (events.js:172:7)
+14 verbose stack     at maybeClose (internal/child_process.js:818:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+15 verbose pkgid pickthing@0.0.0
+16 verbose cwd /home/brad/pickthing
+17 error Linux 3.2.0-4-686-pae
+18 error argv "/usr/bin/nodejs" "/usr/bin/npm" "start"
+19 error node v5.0.0
+20 error npm  v3.3.6
+21 error code ELIFECYCLE
+22 error pickthing@0.0.0 start: `node ./bin/www`
+22 error Exit status 1
+23 error Failed at the pickthing@0.0.0 start script 'node ./bin/www'.
+23 error This is most likely a problem with the pickthing package,
+23 error not with npm itself.
+23 error Tell the author that this fails on your system:
+23 error     node ./bin/www
+23 error You can get their info via:
+23 error     npm owner ls pickthing
+23 error There is likely additional logging output above.
+24 verbose exit [ 1, true ]
