@@ -9,29 +9,31 @@
  * Main module of the application.
  */
 angular
-  .module('clientApp', [
-    'ngAnimate',
-    'ngAria',
-    'ngCookies',
-    'ngMessages',
-    'ngResource',
-    'ngRoute',
-    'ngSanitize',
-    'ngTouch'
-  ])
+  .module('clientApp', ['ngRoute'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
-        controller: 'MainCtrl',
-        controllerAs: 'main'
+        controller: 'MainCtrl'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
-        controllerAs: 'about'
+      .when('/create', {
+        templateUrl: 'views/create.html',
+        controller: 'CreateCtrl'
+      })
+      .when('/join', {
+        templateUrl: 'views/join.html',
+        controller: 'JoinCtrl'
       })
       .otherwise({
         redirectTo: '/'
       });
   });
+
+  // 'ngAnimate',
+  //   'ngAria',
+  //   'ngCookies',
+  //   'ngMessages',
+  //   'ngResource',
+  //   'ngRoute',
+  //   'ngSanitize',
+  //   'ngTouch'
